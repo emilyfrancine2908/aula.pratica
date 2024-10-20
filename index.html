@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário de Inscrição</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+<body>
+    <div class="form-container">
+        <h2>Formulário de Inscrição</h2>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+ 
+            <div class="form-group">
+                <label for="dataNascimento">Data de Nascimento</label>
+                <input type="date" id="dataNascimento" name="dataNascimento" required>
+            </div>
+ 
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+ 
+            <div class="form-group">
+                <label for="curso">Curso</label>
+                <select id="curso" name="curso" required>
+                    <option value="" disabled selected>Selecione um curso</option>
+                    <option value="Administração">Administração</option>
+                    <option value="Edificações">Edificações</option>
+                    <option value="Enfermagem">Enfermagem</option>
+                    <option value="Informática">Informática</option>
+                    <option value="Turismo">Turismo</option>
+                </select>
+            </div>
+ 
+            <div class="buttons">
+                <button type="button" class="add-btn" onclick="AddCadastroArray()">Adicionar</button>
+                <button type="button" class="delete-btn" onclick="ClearCadastro()">Excluir</button>
+                <button type="button" class="add-btn" onclick="viewName()">Exibir Nomes</button>
+                <button type="button" class="add-btn" onclick="updateCursos()">Alterar curso</button>
+            </div>
+        </form>
+    </div>
+    <script>
